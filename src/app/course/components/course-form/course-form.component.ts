@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Level } from '../../enum/levelCourse.enum';
 import { Status } from '../../enum/statusCourse';
-import { CourseService } from '../../services/course.service.service';
+import { CourseService } from '../../services/course.service';
 
 @Component({
   selector: 'app-course-form',
