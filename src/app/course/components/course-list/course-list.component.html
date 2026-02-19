@@ -1,0 +1,17 @@
+<div *ngIf="courses.length === 0">
+    <p>No hay cursos registrados.</p>
+</div>
+
+<div *ngFor="let course of courses" class="card">
+    <h3>{{ course.name }}</h3>
+    <p>Duración: {{ course.duration }} horas</p>
+    <p>Nivel: {{ course.level }}</p>
+    <p>Estado: <span
+            [ngClass]="{'activo': course.status==='activo', 'inactivo': course.status==='inactivo'}">{{
+            course.status }}</span></p>
+
+    <button (click)="toggleStatus(course.id)">
+        {{ course.status === 'activo' ? 'Desactivar' : 'Activar' }}
+    </button>
+    <button (click)="deleteCourse(course.id)">Eliminar</button>
+</div>

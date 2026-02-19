@@ -1,0 +1,15 @@
+<div class="formulario">
+    <input type="text" placeholder="Nombre del curso" [(ngModel)]="name" />
+    <input type="number" placeholder="Duración (horas)"
+        [(ngModel)]="duration" />
+
+    <select [(ngModel)]="level">
+        <option *ngFor="let n of levels" [value]="n">{{ n }}</option>
+    </select>
+
+    <select [(ngModel)]="status">
+        <option *ngFor="let e of states" [value]="e">{{ e }}</option>
+    </select>
+
+    <button (click)="saveCourses()">Agregar Curso</button>
+</div>
