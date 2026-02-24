@@ -11,5 +11,6 @@
         <option *ngFor="let e of states" [value]="e">{{ e }}</option>
     </select>
 
-    <button (click)="saveCourses()">Agregar Curso</button>
+    <app-action-button text="Agregar curso"
+        (action)="saveCourses()"></app-action-button>
 </div>

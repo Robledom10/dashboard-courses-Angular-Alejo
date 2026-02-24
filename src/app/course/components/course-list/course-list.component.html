@@ -9,9 +9,11 @@
     <p>Estado: <span
             [ngClass]="{'activo': course.status==='activo', 'inactivo': course.status==='inactivo'}">{{
             course.status }}</span></p>
+    <app-action-button text="Cambiar estado curso"
+        (action)="toggleStatus(course.id)"></app-action-button>
 
-    <button (click)="toggleStatus(course.id)">
-        {{ course.status === 'activo' ? 'Desactivar' : 'Activar' }}
-    </button>
+    <app-action-button text="Eliminar curso"
+        (action)="deleteCourse(course.id)"></app-action-button>
+
     <button (click)="deleteCourse(course.id)">Eliminar</button>
 </div>
