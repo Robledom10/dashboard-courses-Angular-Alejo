@@ -1,4 +1,4 @@
-<div *ngIf="courses.length === 0">
+<div *ngIf="courses.length === 0" class="empty-state">
     <p>No hay cursos registrados.</p>
 </div>
 
@@ -13,7 +13,5 @@
         (action)="toggleStatus(course.id)"></app-action-button>
 
     <app-action-button text="Eliminar curso"
-        (action)="deleteCourse(course.id)"></app-action-button>
-
-    <button (click)="deleteCourse(course.id)">Eliminar</button>
+        (action)="deleteCourse(course.id)" variant="danger"></app-action-button>
 </div>

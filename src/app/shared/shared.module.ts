@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActionButtonComponent } from './atoms/action-button/action-button.component';
 
-
-
 @NgModule({
   declarations: [
     ActionButtonComponent

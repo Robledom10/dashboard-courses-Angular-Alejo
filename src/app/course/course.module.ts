@@ -4,9 +4,6 @@ import { CourseFormComponent } from './components/course-form/course-form.compon
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
-
-
-
 @NgModule({
   declarations: [
     CourseFormComponent,

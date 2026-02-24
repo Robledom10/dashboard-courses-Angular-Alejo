@@ -6,7 +6,7 @@ import { CourseService } from '../../services/course.service';
 @Component({
   selector: 'app-course-form',
   templateUrl: './course-form.component.html',
-  styleUrl: './course-form.component.scss'
+  styleUrls: ['./course-form.component.scss']
 })
 export class CourseFormComponent {
   name = '';
