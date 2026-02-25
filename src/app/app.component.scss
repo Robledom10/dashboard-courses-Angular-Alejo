@@ -1,0 +1,42 @@
+
+:host {
+    display: block;
+    min-height: 100vh;
+    padding: 32px 16px 40px;
+    background: radial-gradient(circle at top left, #e0f2fe 0, transparent 50%),
+                radial-gradient(circle at bottom right, #fee2e2 0, transparent 55%),
+                #f9fafb;
+    box-sizing: border-box;
+  }
+  
+  /* Título principal */
+  h1 {
+    margin: 0 auto 24px;
+    max-width: 960px;
+  
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #111827;
+    text-align: center;
+  
+    span {
+      color: #4f46e5;
+    }
+  }
+  
+  /* Línea separadora */
+  hr {
+    max-width: 960px;
+    margin: 24px auto;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  /* Contenedores de los componentes hijos */
+  app-course-form,
+  app-course-list {
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+  }
